@@ -1,0 +1,110 @@
+<style media="screen">
+  main,
+html {
+  background-color: #008040;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+.container {
+  background-color: #dfdfdf;
+  width: 75%;
+  margin: 0 auto;
+  border: 4px;
+  border-radius: 15px;
+  padding: 10px;
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+#description {
+  margin-top: -5px;
+}
+
+#required {
+  margin-top: -40px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.rowTab {
+  margin: 15px;
+}
+
+.input {
+  height: 32px;
+  width: 280px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+textarea {
+  height: 200px;
+  text-align: left;
+  width: 25%;
+  font-size: 16px;
+}
+
+button {
+  height: 50px;
+  width: 8%;
+  border-radius: 5px;
+  background-color: #008040;
+  color: white;
+  font-size: 20px;
+}
+</style>
+
+<h1 id="title">Survey Form</h1>
+<div class="container" id="form-outer">
+  <p id="description">Give us your feedback on your experience!</p><br>
+  <p id="required">(Fields marked * are required)</p>
+  <form id="survey-form" action="Details">
+    <div class="rowTab" id="name-form">
+      <label id="name-label">* Name: </label><input class="input" autofocus type="text" id="name" placeholder="Enter your name" required></input>
+    </div>
+    <div class="rowTab" id="email-form">
+      <label id="email-label">* Email: </label><input class="input" type="email" id="email" placeholder="Enter your email" required></input>
+    </div>
+    <div class="rowTab" id="age-form">
+      <label id="number-label">* Age: </label>
+      <input class="input" id="number" type="number" min="1" max="122" placeholder="Age" required></input>
+    </div>
+    <div class="rowTab" id="dropdown-form">
+      <label>Please select the option most suited to you:</label>
+      <select class="input" id="dropdown">
+        <option value="select">Please select an option</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+        <option value="3">Option 3</option>
+        <option value="4">Option 4</option>
+        <option value="5">Option 5</option>
+      </select>
+    </div>
+    <div class="rowTab" id="radio-buttons">
+      <label for="option-select">Which option do you pick?
+        <ul style="list-style: none;">
+          <li><label><input name="radio-buttons" value="1" type="radio">1</label></li>
+          <li><label><input name="radio-buttons" value="2" type="radio">2</label></li>
+          <li><label><input name="radio-buttons" value="3" type="radio">3</label></li>
+        </ul>
+      </label>
+    </div>
+    <div class="rowTab" id="checkboxes">
+      <label for="checkbox-select">Please pick one or more options:
+        <ul style="list-style: none;">
+          <li><label><input name="checkboxes" value="1" type="checkbox">A</label></li>
+          <li><label><input name="checkboxes" value="2" type="checkbox">B</label></li>
+          <li><label><input name="checkboxes" value="3" type="checkbox">C</label></li>
+        </ul>
+      </label>
+    </div>
+    <div class="rowTab" id="text-box">
+      <label id="text-box">Any other comments please enter them below:<br><br><textarea class="textbox" type="text" id="comments" placeholder="Enter comments here..."></textarea></label>
+    </div>
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</div>
