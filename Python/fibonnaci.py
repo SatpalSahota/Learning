@@ -5,4 +5,4 @@ def fib(n):
 			a, b = b, a+b
 		print()
 
-fib(10000000)
+fib(100000)
