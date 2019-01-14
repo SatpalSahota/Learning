@@ -5,4 +5,6 @@ def fib(n):
 			a, b = b, a+b
 		print()
 
-fib(100000)
+print("How high would you like to go? ")
+limit = input()
+fib(int(limit))
