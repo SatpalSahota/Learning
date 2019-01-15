@@ -1,3 +1,3 @@
 # Learning
 
-#Learning to code using a variety of languages!
+Learning to code using a variety of languages!
