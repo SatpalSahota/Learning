@@ -1,9 +1,12 @@
-requested_toppings = []
+available_toppings = ['mushrooms', 'olives', 'green peppers', 'pepperoni', 'pineapple', 'extra cheese']
+requested_toppings = ['mushrooms', 'fries', 'extra cheese' ]
 
-for topping in requested_toppings:
-    if topping == 'peppers':
-        print("Sorry, we don't have peppers right now.")
-    else:
-        print("Adding " + topping + " to your pizza... ")
-
-print("\nFinished making your pizza!")
+if requested_toppings:
+    for topping in requested_toppings:
+        if topping in available_toppings:
+            print("Adding " + topping.title() + ".")
+        else:
+            print("Sorry, we don't have " + topping.title() + ".")
+    print("\nFinished making your pizza!")
+else:
+    print("Are you sure you want a plain pizza?")
