@@ -1,0 +1,63 @@
+html,
+body {
+    background-color: lightgrey;
+    font-family: "https://fonts.google.com/";
+    text-align: center;
+}
+
+#main {
+    margin: 25px auto;
+    padding: 15px;
+    border: 0px solid;
+    border-radius: 5px;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+#image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+#img-caption {
+    margin: -150px;
+    font-size: 13px;
+}
+
+#tribute-info {
+    font-family: "https://fonts.google.com/";
+    font-size: 20px;
+    margin: 40px;
+    margin-top: 40px;
+    margin-left: 450px;
+    text-align: left;
+    max-width: 1000px;
+    line-height: 25px;
+}
+
+ul {
+    margin: 10px;
+}
+
+blockquote {
+    margin: 100px;
+    font-style: italic;
+    font-size: 22px;
+}
+
+#quote-caption {
+    margin: -90px;
+    font-size: 18px;
+}
+
+h3 {
+    margin: 200px;
+}
+
+#statue {
+    margin-top: -150px
+}
