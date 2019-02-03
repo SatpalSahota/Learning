@@ -1,13 +1,15 @@
 import random
 
 number = random.randint(1,101)
-print(number)
 
-print("Guess the number between 1 and 100!")
-guess = input()
+prompt = "Guess the number between 1 and 100! "
 
-if guess == number:
-    print("Well done, that's right!")
-
-print("Wrong! Guess again!")
-number = input
+while True:
+    guess = int(input(prompt))
+    if guess < number:
+        print("Too low!")
+    elif guess > number:
+        print("Too high!")
+    else:
+        print("Correct!")
+        break
