@@ -4,10 +4,13 @@ number = random.randint(1, 101)
 
 prompt = "Guess the number between 1 and 100! "
 
+active = True
+
+guess = int(input(prompt))
+
 
 def main():
-    while True:
-        guess = int(input(prompt))
+    while active == True:
         if guess < number:
             print("Too low!")
         elif guess > number:
@@ -17,4 +20,14 @@ def main():
             break
 
 
-main()
+if active == True:
+    if guess < 1:
+        print("Please enter a number higher than 0.")
+        prompt
+    elif guess > 100:
+        print("Please enter a number lower than 101.")
+        prompt
+    else:
+        main()
+else:
+    print("")
